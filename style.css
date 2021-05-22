@@ -1,0 +1,359 @@
+/* start framework */
+body { margin: 0; padding: 0; font-family: tahoma; height:4440px;} 
+* , *:after , *:before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container {
+    width: 1180px;
+    margin: auto;
+}
+ul {list-style: none; padding:0; margin:0;}
+.clearfix {
+    clear:both;
+}
+/* end framework */
+/* start header */
+section.conrad {
+    width:100%;
+    height: 600px;
+    background: url("slide-1-fs.jpg");
+    background-size:cover ;
+    padding-top: 3%;
+    background-attachment: fixed;
+}
+section.conrad div.logo {
+    width: 50%;
+    float: left;
+    font-size: 2em;
+    text-transform:uppercase;
+    color:#fff;
+
+}
+section.conrad nav  { width:50%; display: inline-block; }
+section.conrad  .navbar .links li.active a,
+section.conrad .navbar .links li a:hover { color:#00ffcc; }
+section.conrad nav ul li { display: inline-block;  padding-left: 2%; }
+section.conrad nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+section.conrad div.digital { margin-top: 10%; }
+section.conrad .digital p:first-child{
+    font-size: 4em;
+    color:#fff;
+    font-weight: bold;
+}
+section.conrad .digital p:first-child:hover{ color:#09eec0; }
+section.conrad .digital p:last-child {  color:#fff; }
+section.conrad .digital p:last-child span { transition: all 0.5s ease-in-out; }
+section.conrad div.digital p:last-child:hover span{ transform: rotate(360deg); display: inline-block; }
+/* end header */
+/* Start about */
+section.about {  width:100%; padding: 60px 0 60px 0; }
+section.about div.creative ,
+section.about div.awesome ,
+section.about div.office {
+    width: 30%;
+    float: left;
+    margin-left: 3%;
+}
+section.about div.creative { margin-left: 0; }
+section.about div.creative h2 {
+    font-size: 2em;
+    color:#444;
+    margin-bottom: 5%;
+}
+section.about div.creative p { margin-bottom: 7%; line-height: 1.5; }
+section.about div.creative p:nth-of-type(1) { color:#444; }
+section.about div.creative p:nth-of-type(2) { color:rgb(177, 176, 176); line-height: 1.2; }
+section.about div.creative p:nth-of-type(3) a {
+    text-decoration: none;
+    color:#777;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+}
+section.about div.creative p:nth-of-type(3) a:hover { color:#11ee09; } 
+section.about div.awesome h4 ,
+section.about div.office h4 {
+    margin-top: 5%;
+    margin-bottom: 4%;
+    color:#666;
+}
+section.about div.awesome p ,
+section.about div.office p { color:#999; font-size:14px; }
+section.about div.awesome > div ,
+section.about div.office > div {
+    overflow: hidden; position: relative; 
+}
+section.about div.awesome  div.overlay ,
+section.about div.office  div.overlay{
+    position: absolute; 
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display:none;
+
+}
+section.about div.awesome img ,
+section.about div.office img { transition: all 0.5s ease-in-out; width:100%; }
+section.about div.awesome > div:hover img,
+section.about div.office > div:hover img { transform: scale(1.2); }
+section.about div.awesome  > div:hover div.overlay,
+section.about div.office > div:hover div.overlay { display: block; }
+/* End about */
+/* start testemonials */
+section.test {
+    width: 100%;
+    background: url("slide-7-fw.jpg");
+    height:500px;
+    background-size: cover;
+    margin-top: 10%;
+    background-attachment: fixed;
+    text-align: center;
+    line-height: 1.7;
+}
+section.test .folio { padding-top: 15%; }
+section.test .folio h2{
+    font-size: 30px;
+    font-style: bold;
+    color: #09eec0;
+}
+section.test .folio p{
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: normal;
+}
+section.test .folio div.two{ display: none; }
+section.test .folio span{ font-size: 20px; font-style: italic; }
+section.test .folio span:hover{ color: #09eec0; transition: all 0.5s ease-in-out; }
+section.test .folio button{
+    width:300px;
+    padding:10px;
+    background: none;
+    border: 2px solid #09eec0;
+    cursor:pointer;
+    color:#fff;
+    font-size: 18px;
+    outline: 0;
+}
+section.test .folio button:hover{
+    background-color: #000;
+    transition: all 0.5s ease-in-out;
+    border: 2px solid #000;
+}
+/* End testemonials */
+/* start solution */
+section.solution { width:100%;  padding: 70px 0 70px 0; }
+section.solution div.tailor { width: 45%; float: left; }
+section.solution div.tailor h2 { font-size: 2.5em; margin-bottom: 5%; }
+section.solution div.tailor p:nth-of-type(1){
+    font-size:18px;
+    color:#333;
+    line-height: 1.3;
+}
+section.solution div.tailor p:nth-of-type(2){
+    margin-top: 4%;
+    font-size:18px;
+    color:#777;
+    line-height: 1.3;
+    padding-bottom: 15px;
+}
+section.solution div.tailor p:nth-of-type(3) a {
+    text-decoration: none;
+    color:#777;
+    font-size: 18px;
+    transition: all 0.5s ease-in-out;
+}
+section.solution div.tailor p:nth-of-type(3) a:hover { color:#11ee09; }
+section.solution div.accorden {
+    width:45%;
+    float: left;
+    padding-left: 5%;
+}
+section.solution div.accorden h3{
+   background-color: #444;
+   color:#fff;
+   padding:10px;
+   cursor: pointer;
+   border: 1px solid #fff;
+}
+section.solution div.accorden p {
+    background-color: #ddd;
+    color:#555;
+   padding: 15px 0 15px 0;
+   display: none;
+}
+/* end solution */
+/* start study */
+section.study {
+    width:100%;
+    background-color: #e62739;
+    height: 500px;
+    margin-top: 8%;
+}
+section.study div.app {
+    width:45%;
+    float: left;
+    color:#fff;
+}
+section.study div.app h2 { padding-top: 25%; }
+section.study div.app p {
+    font-size: 19px;
+    margin-top: 3%;
+    line-height:1.3;
+}
+section.study div.app p:nth-of-type(3) a {
+    text-decoration: none;
+    color:rgb(235, 233, 233);
+    font-size: 18px;
+    transition: all 0.5s ease-in-out;
+}
+section.study div.app p:nth-of-type(3) a:hover { color:#11ee09; }
+section.study div.download {
+    float: right;
+    width: 45%;
+    background: url("hero-half-3.jpg");
+    height: 500px;
+    color:#fff;
+}
+section.study div.download .number {
+    width:50%;
+    height: 200px;
+    margin: 25% auto;
+}
+section.study div.download .number .left {  width:45%; float: left; }
+section.study div.download .number .right { width:45%;  float: right; }
+section.study div.download .number .left p,
+section.study div.download .number .right p{ margin-bottom: 5%; font-size: 4em; }
+section.study div.download .number .left span,
+section.study div.download .number .right span {
+    margin-bottom: 5%;
+    font-size: 2em;
+    color:#fff;
+}
+/* end study */
+/* start Recent Section */
+section.recent { width:100%; padding: 100px 0 150px 0; }
+section.recent div.nav { text-align: center; } 
+section.recent div.nav h2 { font-size:3em; padding: 0 0 30px 0; }
+section.recent div.nav nav  span {
+    cursor: pointer;
+    color:#999;
+    font-size: 25px;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid #11ee09;
+}
+section.recent div.nav nav  span:hover {
+    color:#fff;
+    background-color: #000;
+    outline: #000;
+}
+section.recent div.allimg {padding-top: 45px;}
+section.recent div.allimg .left{  width:50%;  float: left; }
+section.recent div.allimg .left .col1{ float: left; width:50%; }
+section.recent div.allimg .left .col1 img{ width:100%; }
+section.recent div.allimg .left .col2{ float: left; width:50%; }
+section.recent div.allimg .left .col2 img{ width:100%; }
+section.recent div.allimg .right{ width:50%; float: left; }
+section.recent div.allimg .right .bigimg{ width:100%; }
+section.recent div.allimg .right .bigimg img{ width:100%; }
+section.recent div.allimg .right .smallimgs{ width:100%; display: flex;}
+section.recent div.allimg .right .smallimgs > div {  width: 50%;; }
+section.recent div.allimg .right .smallimgs > div:nth-of-type(1) img{ float: left;  width:100%; }
+section.recent div.allimg .right .smallimgs > div:nth-of-type(2) img{ width:100%;  float: right; }
+ .mix{display: none; }
+/* end Recent Section */
+/* start clients */
+section.clients {
+    height: 100%;
+    margin-top: 15%;
+    padding: 25px 0 25px 0;
+    background-color: #9068be;
+    height: 300px;
+    color:#fff;
+}
+section.clients div.client {  width:20%; float: left; }
+section.clients div.client h2{ font-size:3em;  cursor: pointer; }
+section.clients div.client p,
+section.clients div.client span {
+    line-height: 3.5;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+section.clients div.client p:hover,
+section.clients div.client span:hover { color:#000; }
+/* end clients */
+/* Start footer */
+footer {
+    width:100%;
+    height:300px;
+    background-color: #222;
+    color:#fff;
+    padding-top: 20px;
+}
+footer div.end { width:20%; float:left; }
+footer div.end h2 { font-size: 2em; }
+footer div.end h3 { font-size: 22px;}
+footer  div.end span {
+    display: block;
+    font-size: 18px;
+    padding-top: 35px;
+    color:#777;
+    cursor:pointer;
+    transition: all 0.5s ease-in-out;
+}
+footer  div.end span:hover { color:#11ee09; }
+footer div.end p {
+    font-size: 18px;
+    padding-top: 35px;
+    color:#777;
+    cursor:pointer;
+    transition: all 0.5s ease-in-out;
+}
+footer  div.end p:hover { color:#11ee09; }
+footer div.end input {
+    display: block;
+    background: none;
+    border: 1px solid #777;
+    outline: 0;
+    padding: 10px;
+    color: #fff;
+    margin-top: 5%;
+    overflow: hidden;
+}
+footer div.end input[type="text"],
+footer div.end input[type="email"] { border: 1px solid #777; }
+footer div.end input[type="submit"] { cursor: pointer; }
+footer  div.end input[type="submit"]:hover { color:#11ee09; }
+footer .footer {
+    width:100%;
+    height: 70px;
+    background-color: #000;
+    line-height: 70px;
+    margin-top: 2%;
+}
+footer .footer div.left{ float: left; padding-top: 10px; }
+footer .footer div.left  i { color:#979797; }
+footer .footer div.left  i:hover { color: #11ee09; }
+footer .footer div.right{ float: right; }
+footer .footer div.right a{
+    color:#fff;
+    cursor: pointer;
+    width:100px;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+footer .footer div.right a:hover{ color:#11ee09 }
+
+footer .footer .fuck { width:100%; background-color: #000;
+}
+/* end footer */
